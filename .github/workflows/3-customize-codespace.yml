@@ -171,7 +171,7 @@ jobs:
 
       - name: Disable current workflow and enable next one
         run: |
-          gh workflow disable "Step 3"
-          gh workflow enable "Step 4"
+          gh workflow disable "3-customize-codespace.yml"
+          gh workflow enable "4-use-codespace.yml"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
